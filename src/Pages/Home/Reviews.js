@@ -31,14 +31,14 @@ const Reviews = () => {
     ]
 
     return (
-        <section>
-            <div className='flex mt-10'>
+        <section className='mt-[80px]'>
+            <div className="flex justify-between">
                 <div>
-                    <h2 className='text-primary font-bold'>Testimonial</h2>
-                    <h1 className='text-xl'>What Our Patient Says</h1>
+                    <h2 className='text-xl text-primary font-bold'>Testimonial</h2>
+                    <h1 className='text-3xl'>What Our Patient Says</h1>
                 </div>
-                <div className='relative h-64 w-64 flex-1'>
-                    <img  class="absolute top-0 right-0 h-32 w-32" src={quote} alt="" />
+                <div>
+                    <img src={quote} className='w-24 lg:w-48' alt="" />
                 </div>
             </div>
 
