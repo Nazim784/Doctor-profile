@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import footer from '../../assets/images/footer.png'
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <footer className="footer footer-center p-4">
+                <footer className="footer footer-center p-4 m-10">
                     <div>
                         <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
                     </div>

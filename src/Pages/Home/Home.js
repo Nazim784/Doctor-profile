@@ -1,12 +1,11 @@
 import React from 'react';
 import Banner from './Banner';
 import Info from './Info';
-import clock from '../../assets/icons/clock.svg'
 import Services from './Services';
 import MakeAppointment from './MakeAppointment';
 import Reviews from './Reviews';
 import ContactUs from './ContactUs';
-import Footer from './Footer';
+import Footer from '../Shared/Footer';
 
 const Home = () => {
     return (
