@@ -1,9 +1,12 @@
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import Booking from './Booking';
+import BookingModal from './BookingModal';
 
 const AvailableAssignments = ({date}) => {
     const [services, setServices] = useState([]);
+    const [treatment, setTreatment] = useState(null);
+
     useEffect( () =>{
         fetch('services.json')
         .then(res => res.json())
@@ -17,9 +20,11 @@ const AvailableAssignments = ({date}) => {
                     services.map(service => <Booking
                         key={service._id}
                         service={service}
+                        setTreatment={setTreatment}
                     ></Booking>)
                 }
             </div>
+            {treatment &&  <BookingModal date={date} treatment={treatment}></BookingModal>}
         </div>
     );
 };
